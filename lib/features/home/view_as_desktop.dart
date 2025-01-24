@@ -22,7 +22,8 @@ class _ViewAsDesktopState extends State<ViewAsDesktop> {
   bool isLinkedin = false;
   bool isGithub = false;
   bool isGoogle = false;
-  String textOne = 'I’m a developer passionate about crafting accessible, pixel-perfect user interfaces that blend thoughtful design with robust engineering. My favorite work lies at the intersection of design and development, creating experiences that not only look great but are meticulously built for performance and usability.';
+  String textOne =
+      'I’m a developer passionate about crafting accessible, pixel-perfect user interfaces that blend thoughtful design with robust engineering. My favorite work lies at the intersection of design and development, creating experiences that not only look great but are meticulously built for performance and usability.';
 
   @override
   Widget build(BuildContext context) {
@@ -120,46 +121,94 @@ class _ViewAsDesktopState extends State<ViewAsDesktop> {
           ),
         ),
         Expanded(
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              SizedBox(height: size.height * 0.16),
-              SizedBox(
-                width: size.width * 0.4,
-                child: Text(
-                  textOne,
-                  style: transTextstyle.copyWith(
-                    fontSize: 14,
-                    fontWeight: reguler,
-                    color: AppColors.bgTextTinColors,
+          child: SingleChildScrollView(
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                SizedBox(
+                  width: size.width * 0.4,
+                  child: Text(
+                    textOne,
+                    style: transTextstyle.copyWith(
+                      fontSize: 14,
+                      fontWeight: reguler,
+                      color: AppColors.bgTextTinColors,
+                    ),
                   ),
                 ),
-              ),
-              const SizedBox(height: 10),
-              SizedBox(
-                width: size.width * 0.4,
-                child: Text(
-                  textOne,
-                  style: transTextstyle.copyWith(
-                    fontSize: 14,
-                    fontWeight: reguler,
-                    color: AppColors.bgTextTinColors,
+                const SizedBox(height: 10),
+                SizedBox(
+                  width: size.width * 0.4,
+                  child: Text(
+                    textOne,
+                    style: transTextstyle.copyWith(
+                      fontSize: 14,
+                      fontWeight: reguler,
+                      color: AppColors.bgTextTinColors,
+                    ),
                   ),
                 ),
-              ),
-              const SizedBox(height: 10),
-              SizedBox(
-                width: size.width * 0.4,
-                child: Text(
-                  textOne,
-                  style: transTextstyle.copyWith(
-                    fontSize: 14,
-                    fontWeight: reguler,
-                    color: AppColors.bgTextTinColors,
+                const SizedBox(height: 10),
+                SizedBox(
+                  width: size.width * 0.4,
+                  child: Text(
+                    textOne,
+                    style: transTextstyle.copyWith(
+                      fontSize: 14,
+                      fontWeight: reguler,
+                      color: AppColors.bgTextTinColors,
+                    ),
                   ),
                 ),
-              ),
-            ],
+                SizedBox(height: size.height * 0.05),
+                Row(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(
+                      '2024 - Persent',
+                      style: transTextstyle.copyWith(
+                        fontSize: 14,
+                        fontWeight: reguler,
+                        color: AppColors.bgTextTinColors,
+                      ),
+                    ),
+                    const SizedBox(width: 10),
+                    SizedBox(
+                      width: size.width * 0.32,
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.start,
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Text(
+                            'PT. Mega Central Finance',
+                            style: whiteTextstyle.copyWith(
+                              fontSize: 14,
+                              fontWeight: bold,
+                            ),
+                          ),
+                          Text(
+                            textOne,
+                            style: transTextstyle.copyWith(
+                              fontSize: 14,
+                              fontWeight: reguler,
+                              color: AppColors.bgTextTinColors,
+                            ),
+                          ),
+                          Text(
+                            '2024 - Persent',
+                            style: transTextstyle.copyWith(
+                              fontSize: 14,
+                              fontWeight: reguler,
+                              color: AppColors.bgTextTinColors,
+                            ),
+                          ),
+                        ],
+                      ),
+                    )
+                  ],
+                ),
+              ],
+            ),
           ),
         ),
       ],
